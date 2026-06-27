@@ -1,7 +1,11 @@
+@import "./index.css";
+@import "./sobre.css";
+
 body {
     font-family: 'Netflix Sans', Arial, sans-serif;
     color: white;
 }
+
 
 #videoFondo {
     position: fixed;
