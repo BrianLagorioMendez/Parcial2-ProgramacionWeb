@@ -3,9 +3,8 @@
 @import "./temporadas.css";
 @import "./confirmacion.css";
 @import "./contacto.css";
-@import "./personajes.css";
 @import "./404.css";
-@import "./produccion.css"
+@import "./produccion.css";
 
 body {
     font-family: 'Netflix Sans', Arial, sans-serif;
