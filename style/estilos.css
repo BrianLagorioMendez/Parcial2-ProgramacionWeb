@@ -1,11 +1,16 @@
 @import "./index.css";
 @import "./sobre.css";
+@import "./temporadas.css";
+@import "./confirmacion.css";
+@import "./contacto.css";
+@import "./elenco.css";
+@import "./404.css";
+@import ".produccion.css"
 
 body {
     font-family: 'Netflix Sans', Arial, sans-serif;
     color: white;
 }
-
 
 #videoFondo {
     position: fixed;
