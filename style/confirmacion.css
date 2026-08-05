@@ -57,3 +57,67 @@
     font-weight:300;
     font-size:24px;
 }
+
+/*TABLET*/
+
+@media (max-width:992px){
+
+    .confirmacion{
+        margin:50px 20px;
+        padding:40px;
+    }
+
+    .confirmacion h2{
+        font-size:34px;
+    }
+
+    .mensaje{
+        font-size:24px;
+    }
+
+    .confirmacion p{
+        font-size:20px;
+    }
+
+}
+
+/*CELU*/
+
+@media (max-width:576px){
+
+    .confirmacion{
+        margin:30px 15px;
+        padding:25px;
+    }
+
+    .confirmacion h2{
+        font-size:28px;
+    }
+
+    .mensaje{
+        font-size:20px;
+        margin-bottom:20px;
+    }
+
+    .confirmacion p{
+        font-size:18px;
+        line-height:1.7;
+    }
+
+    .boton{
+        width:100%;
+        box-sizing:border-box;
+        font-size:18px;
+        padding:15px;
+    }
+
+    .frase{
+        font-size:16px;
+    }
+
+    .sicmundus{
+        font-size:20px;
+        letter-spacing:4px;
+    }
+
+}
