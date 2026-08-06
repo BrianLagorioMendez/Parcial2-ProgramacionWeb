@@ -149,9 +149,11 @@
         padding: 0 20px;
     }
 
-    .infosobre {
-        flex-direction: column;
-        padding: 0 20px;
+    
+   .infosobre{
+    display:flex;
+    flex-direction:column;
+    padding:0 20px;
     }
 
     .texto,
@@ -199,8 +201,10 @@
         padding: 0 15px;
     }
 
-    .infosobre {
-        padding: 0 15px;
+    .infosobre{
+    display:flex;
+    flex-direction:column;
+    padding:0 15px;
     }
 
     .cajasobre {
