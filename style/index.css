@@ -1,7 +1,7 @@
 .bienvenida{
     display:flex;
     justify-content:center;
-    margin: 15px auto 30px;
+    margin:15px auto 30px;
     max-width:1700px;
     padding:0 30px;
 }
@@ -9,7 +9,7 @@
 .cajabienvenida{
     width:100%;
     background:rgba(0,0,0,.60);
-    padding: 40px 50px 70px;
+    padding:40px 50px 70px;
     text-align:center;
     box-sizing:border-box;
 }
@@ -34,6 +34,7 @@
 }
 
 
+/*INTRODUCCION*/
 
 .intro{
     max-width:1700px;
@@ -78,6 +79,7 @@
 }
 
 
+/*TRAILER*/
 
 .trailer{
     max-width:1700px;
@@ -106,4 +108,133 @@
 
 .video1{
     width:100%;
+    display:block;
+}
+
+
+/*TABLET*/
+
+@media (max-width:992px){
+
+    .bienvenida{
+        padding:0 20px;
+    }
+
+    .cajabienvenida{
+        padding:35px;
+    }
+
+    .cajabienvenida h2{
+        font-size:36px;
+    }
+
+    .subtitulo{
+        font-size:26px;
+    }
+
+    .descripcion{
+        font-size:20px;
+    }
+
+    .intro{
+        padding:0 20px 40px;
+    }
+
+    .bloqueintro{
+        flex-direction:column;
+    }
+
+    .texto,
+    .imagen{
+        width:100%;
+    }
+
+    .texto{
+        padding:35px;
+    }
+
+    .texto h3{
+        font-size:30px;
+        text-align:center;
+    }
+
+    .texto p{
+        font-size:21px;
+    }
+
+    .cajatrailer{
+        padding:35px;
+    }
+
+    .cajatrailer h2{
+        font-size:34px;
+    }
+
+    .cajatrailer p{
+        font-size:20px;
+    }
+
+}
+
+
+/*CELU*/
+
+@media (max-width:576px){
+
+    .bienvenida{
+        padding:0 15px;
+    }
+
+    .cajabienvenida{
+        padding:25px;
+    }
+
+    .cajabienvenida h2{
+        font-size:28px;
+    }
+
+    .subtitulo{
+        font-size:22px;
+    }
+
+    .descripcion{
+        font-size:18px;
+        line-height:1.6;
+    }
+
+    .intro{
+        padding:0 15px 30px;
+    }
+
+    .texto{
+        padding:25px;
+    }
+
+    .texto h3{
+        font-size:26px;
+    }
+
+    .texto p{
+        font-size:18px;
+        line-height:1.6;
+    }
+
+    .cajatrailer{
+        padding:25px;
+    }
+
+    .cajatrailer h2{
+        font-size:28px;
+    }
+
+    .cajatrailer p{
+        font-size:18px;
+        margin-bottom:25px;
+    }
+
+    .video1{
+        width:100%;
+        height:auto;
+    }
+
 }
