@@ -1,261 +1,208 @@
-.presentacionsobre {
-    display: flex;
-    justify-content: center;
-    max-width: 1700px;
-    margin: 20px auto 40px;
-    padding: 0 30px;
-}
-
-.cajasobre {
-    width: 100%;
-    background: rgba(0, 0, 0, .60);
-    padding: 60px;
+.produccion {
+    padding: 40px;
+    color: white;
     text-align: center;
-    box-sizing: border-box;
+    font-size: 20px;
 }
 
-.cajasobre h2 {
-    color: white;
-    font-size: 42px;
-    margin-bottom: 25px;
-    line-height: 1.4;
+/*VIDEO*/
+
+.video {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.subtitulo {
-    color: #d4af37;
-    font-size: 28px;
-    font-style: italic;
-    margin-bottom: 35px;
+.video video {
+    width: 80%;
+    border-radius: 8px;
 }
 
-.linea {
-    width: 180px;
-    height: 2px;
-    background: #d4af37;
-    margin: 0 auto 40px;
-}
+/*TEXTOS*/
 
-.presentacionsobre p {
-    color: white;
-    font-size: 22px;
-    line-height: 1.9;
-    max-width: 1350px;
-    margin: 0 auto 35px;
-}
-
-.audio {
+.cajatexto {
     display: flex;
-    justify-content: center;
-    margin: 50px auto;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.audio audio {
-    width: 450px;
-}
-
-.infosobre {
+.cajatextoinv {
     display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 0;
-    margin: 50px auto;
-    max-width: 1700px;
-    padding: 0 30px;
-    box-sizing: border-box;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.texto {
+.textos {
     width: 50%;
-    background: rgba(0, 0, 0, .60);
-    padding: 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-    border-right: 2px solid #d4af37;
+    color: white;
+    border-left: 3px solid yellow;
+    padding-left: 15px;
 }
 
-.imagen {
-    width: 50%;
-    display: flex;
+.imagenprodu {
+    width: 35%;
 }
 
-.imagen img {
+.imagenprodu img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform .45s ease;
+    border-radius: 8px;
+    transition: transform .3s;
 }
 
-.imagen:hover img {
+.imagenprodu img:hover {
     transform: scale(1.03);
 }
 
-.texto h2 {
-    color: #d4af37;
-    font-size: 34px;
-    margin-bottom: 25px;
-    transition: transform .35s ease;
-}
+/*CURIOSIDADES*/
 
-.texto p {
+.curiosidades {
+    padding: 40px;
     color: white;
-    font-size: 22px;
-    line-height: 1.8;
-    transition: transform .35s ease;
+    max-width: 900px;
+    margin: auto;
 }
 
-.texto:hover h2 {
-    transform: scale(1.03);
+.curiosidades h2 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
-.texto:hover p {
-    transform: scale(1.02);
+.curiosidad {
+    background: rgba(0,0,0,0.4);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border-left: 3px solid yellow;
 }
 
-.infosobre:nth-child(even) .texto {
-    border-right: none;
-    border-left: 2px solid #d4af37;
+.curiosidad div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.infosobre::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
+.curiosidad h3 {
+    margin-bottom: 6px;
+    font-size: 25px;
+    color: yellow;
 }
 
-.infosobre {
-    position: relative;
+.curiosidad p {
+    color: white;
+    line-height: 1.5;
+    font-size: 20px;
 }
 
-.texto {
-    transition:
-        transform .35s ease,
-        box-shadow .35s ease;
+.curiosidad img {
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
-.texto:hover {
-    box-shadow: 0 0 18px rgba(212, 175, 55, .18);
+/*TABLET*/
+
+@media (max-width:992px){
+
+    .produccion{
+        padding:30px 20px;
+    }
+
+    .video video{
+        width:100%;
+    }
+
+    .cajatexto,
+    .cajatextoinv{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .textos{
+        width:100%;
+        border-left:none;
+        border-top:3px solid yellow;
+        padding-left:0;
+        padding-top:20px;
+    }
+
+    .imagenprodu{
+        width:100%;
+    }
+
+    .curiosidades{
+        padding:30px 20px;
+    }
+
+    .curiosidad div{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .curiosidad img{
+        width:100%;
+        height:auto;
+    }
+
 }
 
-.imagen {
-    overflow: hidden;
-}
+/*CELU*/
 
-.imagen img {
-    transition:
-        transform .45s ease,
-        filter .45s ease;
-}
+@media (max-width:576px){
 
-.imagen:hover img {
-    transform: scale(1.04);
-    filter: brightness(1.05);
-}
-
-.texto h2 {
-    letter-spacing: 1px;
-}
-
-.presentacionsobre h2 {
-    text-shadow: 0 0 12px rgba(0, 0, 0, .8);
-}
-
-.texto:hover h2 {
-    text-shadow: 0 0 10px black;
-}
-
-.texto:hover p {
-    text-shadow: 0 0 8px black;
-}
-
-@media(max-width:1200px) {
-    .infosobre {
-        flex-direction: column;
+    .produccion{
+        padding:20px 15px;
+        font-size:18px;
     }
 
-    .texto {
-        width: 100%;
-        border-right: none;
-        border-left: none;
+    .video{
+        margin-bottom:25px;
     }
 
-    .imagen {
-
-        width: 100%;
-    }
-}
-
-@media(max-width:900px) {
-    .cajasobre {
-        padding: 40px;
+    .cajatexto,
+    .cajatextoinv{
+        padding:15px;
+        margin-bottom:25px;
     }
 
-    .cajasobre h2 {
-        font-size: 34px;
+    .textos h2{
+        font-size:26px;
     }
 
-    .subtitulo {
-        font-size: 24px;
+    .textos p{
+        font-size:18px;
+        line-height:1.6;
     }
 
-    .presentacionsobre p {
-        font-size: 20px;
+    .curiosidades{
+        padding:20px 15px;
     }
 
-    .texto {
-        padding: 35px;
+    .curiosidades h2{
+        font-size:28px;
     }
 
-    .texto h2 {
-        font-size: 30px;
+    .curiosidad{
+        padding:15px;
     }
 
-    .texto p {
-        font-size: 20px;
+    .curiosidad h3{
+        font-size:22px;
     }
 
-    .audio audio {
-        width: 100%;
-    }
-}
-
-@media(max-width:650px) {
-    .presentacionsobre {
-        padding: 0 15px;
+    .curiosidad p{
+        font-size:17px;
     }
 
-    .infosobre {
-        padding: 0 15px;
-    }
-
-    .cajasobre {
-        padding: 30px;
-    }
-
-    .cajasobre h2 {
-        font-size: 28px;
-    }
-
-    .subtitulo {
-        font-size: 20px;
-    }
-
-    .presentacionsobre p {
-        font-size: 18px;
-    }
-
-    .texto {
-        padding: 25px;
-    }
-
-    .texto h2 {
-        font-size: 26px;
-    }
-
-    .texto p {
-        font-size: 18px;
-    }
 }
