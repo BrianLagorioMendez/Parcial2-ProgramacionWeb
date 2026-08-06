@@ -43,14 +43,16 @@
     margin: 0 auto 35px;
 }
 
-.audio {
-    display: flex;
-    justify-content: center;
-    margin: 50px auto;
+.audio{
+    display:flex;
+    justify-content:center;
+    margin:50px auto;
+    padding:0 15px;
 }
 
-.audio audio {
-    width: 450px;
+.audio audio{
+    width:100%;
+    max-width:450px;
 }
 
 .infosobre {
@@ -187,10 +189,6 @@
 
     .texto p {
         font-size: 20px;
-    }
-
-    .audio audio {
-        width: 100%;
     }
 
 }
