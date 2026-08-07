@@ -53,42 +53,42 @@
     width:450px;
 }
 
-.infosobre {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 0;
-    margin: 50px auto;
-    max-width: 1700px;
-    padding: 0 30px;
-    box-sizing: border-box;
-    position: relative;
+.infosobre{
+    display:flex;
+    align-items:stretch;
+    justify-content:center;
+    gap:0;
+    width:100%;
+    max-width:1700px;
+    margin:50px auto;
+    padding:0 30px;
+    box-sizing:border-box;
 }
 
-.texto {
-    width: 50%;
-    background: rgba(0, 0, 0, .60);
-    padding: 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-    border-right: 2px solid #d4af37;
-    transition: transform .35s ease, box-shadow .35s ease;
+.texto{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:45px;
+    background:rgba(0,0,0,.60);
+    box-sizing:border-box;
+    border-right:2px solid #d4af37;
+    transition:transform .35s ease, box-shadow .35s ease;
 }
 
-.imagen {
-    width: 50%;
-    display: flex;
-    overflow: hidden;
+.imagen{
+    width:50%;
+    display:flex;
+    align-items:stretch;
+    overflow:hidden;
 }
 
-.imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform .45s ease, filter .45s ease;
+.imagen img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
 }
 
 .imagen:hover img {
@@ -143,102 +143,130 @@
 
 /*TABLET*/
 
-@media (max-width:992px) {
+@media (max-width:992px){
 
-    .presentacionsobre {
-        padding: 0 20px;
+    .presentacionsobre{
+        width:100%;
+        max-width:900px;
+        margin:20px auto;
+        padding:0 20px;
+        box-sizing:border-box;
     }
 
-    
-   .infosobre{
-    display:flex;
-    flex-direction:column;
-    padding:0 20px;
+    .infosobre{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        max-width:900px;
+        margin:40px auto;
+        padding:0 20px;
+        box-sizing:border-box;
     }
 
     .texto,
-    .imagen {
-        width: 100%;
+    .imagen{
+        width:100%;
     }
 
-    .texto {
-        padding: 35px;
-        border-right: none;
-        border-left: none;
+    .texto{
+        padding:35px;
+        border:none;
     }
 
-    .cajasobre {
-        padding: 40px;
+    .imagen img{
+        height:auto;
     }
 
-    .cajasobre h2 {
-        font-size: 34px;
+    .cajasobre{
+        padding:40px;
     }
 
-    .subtitulo {
-        font-size: 24px;
+    .cajasobre h2{
+        font-size:34px;
     }
 
-    .presentacionsobre p {
-        font-size: 20px;
+    .subtitulo{
+        font-size:24px;
     }
 
-    .texto h2 {
-        font-size: 30px;
+    .presentacionsobre p{
+        font-size:20px;
     }
 
-    .texto p {
-        font-size: 20px;
+    .texto h2{
+        font-size:30px;
+    }
+
+    .texto p{
+        font-size:20px;
     }
 
 }
 
 /*CELU*/
 
-@media (max-width:576px) {
+@media (max-width:576px){
 
-    .presentacionsobre {
-        padding: 0 15px;
+    .presentacionsobre{
+        width:100%;
+        max-width:650px;
+        margin:20px auto;
+        padding:0 15px;
+        box-sizing:border-box;
     }
 
     .infosobre{
-    display:flex;
-    flex-direction:column;
-    padding:0 15px;
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        max-width:650px;
+        margin:35px auto;
+        padding:0 15px;
+        box-sizing:border-box;
     }
 
-    .cajasobre {
-        padding: 30px;
+    .texto,
+    .imagen{
+        width:100%;
     }
 
-    .cajasobre h2 {
-        font-size: 28px;
+    .texto{
+        padding:25px;
+        border:none;
     }
 
-    .subtitulo {
-        font-size: 20px;
+    .imagen img{
+        height:auto;
     }
 
-    .linea {
-        width: 120px;
+    .cajasobre{
+        padding:30px;
     }
 
-    .presentacionsobre p {
-        font-size: 18px;
-        line-height: 1.7;
+    .cajasobre h2{
+        font-size:28px;
     }
 
-    .texto {
-        padding: 25px;
+    .subtitulo{
+        font-size:20px;
     }
 
-    .texto h2 {
-        font-size: 26px;
+    .linea{
+        width:120px;
     }
 
-    .texto p {
-        font-size: 18px;
-        line-height: 1.7;
+    .presentacionsobre p{
+        font-size:18px;
+        line-height:1.7;
+    }
+
+    .texto h2{
+        font-size:26px;
+    }
+
+    .texto p{
+        font-size:18px;
+        line-height:1.7;
     }
 
 }
