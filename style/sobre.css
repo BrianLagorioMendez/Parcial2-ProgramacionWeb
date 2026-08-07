@@ -45,18 +45,17 @@
     margin:0 auto 35px;
 }
 
+
 .audio{
     display:flex;
     justify-content:center;
     margin:50px auto;
-    padding:0 20px;
-    box-sizing:border-box;
 }
 
 .audio audio{
-    width:100%;
-    max-width:450px;
+    width:450px;
 }
+
 
 .infosobre{
     display:flex;
@@ -84,9 +83,10 @@
 .imagen{
     width:50%;
     display:flex;
-    align-items:stretch;
     justify-content:center;
+    align-items:stretch;
     overflow:hidden;
+    background:black;
 }
 
 .imagen img{
@@ -98,7 +98,7 @@
 }
 
 .imagen:hover img{
-    transform:scale(1.04);
+    transform:scale(1.02);
     filter:brightness(1.05);
 }
 
@@ -180,6 +180,11 @@
         padding:0 25px;
     }
 
+    .audio audio{
+        width:450px;
+        max-width:100%;
+    }
+
     .infosobre{
         display:flex;
         flex-direction:column;
@@ -254,6 +259,11 @@
 
     .audio{
         padding:0 20px;
+    }
+
+    .audio audio{
+        width:100%;
+        max-width:450px;
     }
 
     .infosobre{
