@@ -54,6 +54,7 @@
 
 .audio audio{
     width:450px;
+    max-width:100%;
 }
 
 
@@ -257,13 +258,9 @@
         line-height:1.7;
     }
 
-    .audio{
-        padding:0 20px;
-    }
-
-    .audio audio{
-        width:100%;
-        max-width:450px;
+   .audio{
+    padding:0 20px;
+    box-sizing:border-box;
     }
 
     .infosobre{
