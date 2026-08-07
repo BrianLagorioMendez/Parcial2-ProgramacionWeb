@@ -1,63 +1,67 @@
-.presentacionsobre {
-    display: flex;
-    justify-content: center;
-    max-width: 1700px;
-    margin: 20px auto 40px;
-    padding: 0 30px;
+.presentacionsobre{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    max-width:1700px;
+    margin:20px auto 40px;
+    padding:0 30px;
+    box-sizing:border-box;
 }
 
-.cajasobre {
-    width: 100%;
-    background: rgba(0, 0, 0, .60);
-    padding: 60px;
-    text-align: center;
-    box-sizing: border-box;
+.cajasobre{
+    width:100%;
+    background:rgba(0,0,0,.60);
+    padding:60px;
+    text-align:center;
+    box-sizing:border-box;
 }
 
-.cajasobre h2 {
-    color: white;
-    font-size: 42px;
-    margin-bottom: 25px;
-    line-height: 1.4;
+.cajasobre h2{
+    color:white;
+    font-size:42px;
+    margin-bottom:25px;
+    line-height:1.4;
 }
 
-.subtitulo {
-    color: #d4af37;
-    font-size: 28px;
-    font-style: italic;
-    margin-bottom: 35px;
+.subtitulo{
+    color:#d4af37;
+    font-size:28px;
+    font-style:italic;
+    margin-bottom:35px;
 }
 
-.linea {
-    width: 180px;
-    height: 2px;
-    background: #d4af37;
-    margin: 0 auto 40px;
+.linea{
+    width:180px;
+    height:2px;
+    background:#d4af37;
+    margin:0 auto 40px;
 }
 
-.presentacionsobre p {
-    color: white;
-    font-size: 22px;
-    line-height: 1.9;
-    max-width: 1350px;
-    margin: 0 auto 35px;
+.presentacionsobre p{
+    color:white;
+    font-size:22px;
+    line-height:1.9;
+    max-width:1350px;
+    margin:0 auto 35px;
 }
 
 .audio{
     display:flex;
     justify-content:center;
     margin:50px auto;
+    padding:0 20px;
+    box-sizing:border-box;
 }
 
 .audio audio{
-    width:450px;
+    width:100%;
+    max-width:450px;
 }
 
 .infosobre{
     display:flex;
     align-items:stretch;
     justify-content:center;
-    gap:0;
     width:100%;
     max-width:1700px;
     margin:50px auto;
@@ -70,10 +74,10 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
-    padding:45px;
+    padding:45px 50px;
     background:rgba(0,0,0,.60);
-    box-sizing:border-box;
     border-right:2px solid #d4af37;
+    box-sizing:border-box;
     transition:transform .35s ease, box-shadow .35s ease;
 }
 
@@ -81,6 +85,7 @@
     width:50%;
     display:flex;
     align-items:stretch;
+    justify-content:center;
     overflow:hidden;
 }
 
@@ -89,56 +94,57 @@
     height:100%;
     object-fit:cover;
     display:block;
+    transition:.35s;
 }
 
-.imagen:hover img {
-    transform: scale(1.04);
-    filter: brightness(1.05);
+.imagen:hover img{
+    transform:scale(1.04);
+    filter:brightness(1.05);
 }
 
-.texto h2 {
-    color: #d4af37;
-    font-size: 34px;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
-    transition: transform .35s ease;
+.texto h2{
+    color:#d4af37;
+    font-size:34px;
+    margin-bottom:25px;
+    letter-spacing:1px;
+    transition:.35s;
 }
 
-.texto p {
-    color: white;
-    font-size: 22px;
-    line-height: 1.8;
-    transition: transform .35s ease;
+.texto p{
+    color:white;
+    font-size:22px;
+    line-height:1.8;
+    transition:.35s;
 }
 
-.texto:hover {
-    box-shadow: 0 0 18px rgba(212, 175, 55, .18);
+.texto:hover{
+    box-shadow:0 0 18px rgba(212,175,55,.18);
 }
 
-.texto:hover h2 {
-    transform: scale(1.03);
-    text-shadow: 0 0 10px black;
+.texto:hover h2{
+    transform:scale(1.03);
+    text-shadow:0 0 10px black;
 }
 
-.texto:hover p {
-    transform: scale(1.02);
-    text-shadow: 0 0 8px black;
+.texto:hover p{
+    transform:scale(1.02);
+    text-shadow:0 0 8px black;
 }
 
-.presentacionsobre h2 {
-    text-shadow: 0 0 12px rgba(0, 0, 0, .8);
+.presentacionsobre h2{
+    text-shadow:0 0 12px rgba(0,0,0,.8);
 }
 
-.infosobre:nth-child(even) .texto {
-    border-right: none;
-    border-left: 2px solid #d4af37;
+.infosobre:nth-child(even) .texto{
+    border-right:none;
+    border-left:2px solid #d4af37;
 }
 
-.infosobre::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
+.infosobre::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:0;
 }
 
 /*TABLET*/
@@ -149,35 +155,12 @@
         width:100%;
         max-width:900px;
         margin:20px auto;
-        padding:0 20px;
+        padding:0 25px;
         box-sizing:border-box;
-    }
-
-    .infosobre{
-        display:flex;
-        flex-direction:column;
-        width:100%;
-        max-width:900px;
-        margin:40px auto;
-        padding:0 20px;
-        box-sizing:border-box;
-    }
-
-    .texto,
-    .imagen{
-        width:100%;
-    }
-
-    .texto{
-        padding:35px;
-        border:none;
-    }
-
-    .imagen img{
-        height:auto;
     }
 
     .cajasobre{
+        width:100%;
         padding:40px;
     }
 
@@ -193,35 +176,17 @@
         font-size:20px;
     }
 
-    .texto h2{
-        font-size:30px;
-    }
-
-    .texto p{
-        font-size:20px;
-    }
-
-}
-
-/*CELU*/
-
-@media (max-width:576px){
-
-    .presentacionsobre{
-        width:100%;
-        max-width:650px;
-        margin:20px auto;
-        padding:0 15px;
-        box-sizing:border-box;
+    .audio{
+        padding:0 25px;
     }
 
     .infosobre{
         display:flex;
         flex-direction:column;
         width:100%;
-        max-width:650px;
-        margin:35px auto;
-        padding:0 15px;
+        max-width:900px;
+        margin:40px auto;
+        padding:0 25px;
         box-sizing:border-box;
     }
 
@@ -231,20 +196,47 @@
     }
 
     .texto{
-        padding:25px;
+        padding:35px 40px;
         border:none;
     }
 
+    .texto h2{
+        font-size:30px;
+    }
+
+    .texto p{
+        font-size:20px;
+    }
+
     .imagen img{
+        width:100%;
         height:auto;
+        display:block;
+    }
+
+}
+
+
+/*CELU*/
+
+@media (max-width:576px){
+
+    .presentacionsobre{
+        width:100%;
+        max-width:650px;
+        margin:20px auto;
+        padding:0 20px;
+        box-sizing:border-box;
     }
 
     .cajasobre{
+        width:100%;
         padding:30px;
     }
 
     .cajasobre h2{
         font-size:28px;
+        line-height:1.4;
     }
 
     .subtitulo{
@@ -260,13 +252,44 @@
         line-height:1.7;
     }
 
+    .audio{
+        padding:0 20px;
+    }
+
+    .infosobre{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        max-width:650px;
+        margin:35px auto;
+        padding:0 20px;
+        box-sizing:border-box;
+    }
+
+    .texto,
+    .imagen{
+        width:100%;
+    }
+
+    .texto{
+        padding:25px 30px;
+        border:none;
+    }
+
     .texto h2{
         font-size:26px;
+        margin-bottom:20px;
     }
 
     .texto p{
         font-size:18px;
         line-height:1.7;
+    }
+
+    .imagen img{
+        width:100%;
+        height:auto;
+        display:block;
     }
 
 }
